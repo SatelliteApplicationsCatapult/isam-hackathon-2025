@@ -1,0 +1,6 @@
+shoulder_pan_joint: 0.0       #    0 deg
+shoulder_lift_joint: -1.0472  #  -60 deg
+elbow_joint: 1.2217           #   70 deg
+wrist_1_joint: -0.1745        #  -10 deg
+wrist_2_joint: 0.0            #    0 deg
+wrist_3_joint: -3.1416        # -180 deg

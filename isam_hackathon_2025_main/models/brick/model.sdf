@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+
+  <model name="brick">
+    <pose>0 0 0 0 0 0</pose>
+    <static>false</static>
+    <link name="link">
+      <inertial>
+        <mass>0.3</mass>
+        <inertia>
+          <ixx>0.00029</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyx>0.0</iyx>
+          <iyy>0.00034</iyy>
+          <iyz>0.0</iyz>
+          <izx>0.0</izx>
+          <izy>0.0</izy>
+          <izz>0.00013</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <pose>-0.03 -0.02 -0.05 0.0 0.0 0.0</pose>
+        <geometry>
+          <!-- <box>
+            <size>0.06 0.04 0.10</size>
+          </box> -->
+            <mesh>
+                <scale>0.001 0.001 0.001</scale>
+                <uri>model://brick/meshes/00_InterlockingBrick_Rev.00.STL</uri>
+            </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>-0.03 -0.02 -0.05 0.0 0.0 0.0</pose>
+        <geometry>
+            <mesh>
+                <scale>0.001 0.001 0.001</scale>
+                <uri>model://brick/meshes/00_InterlockingBrick_Rev.00.STL</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <ambient>1.0 0.0 0.0 1.0</ambient>
+            <diffuse>1.0 0.0 0.0 1.0</diffuse>
+            <specular>1.0 0.0 0.0 1.0</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
